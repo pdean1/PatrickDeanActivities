@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs6242.westga.edu.patrickdeanactivities.MainActivity" />
         </activity>
+        <activity
+            android:name=".DisplayAllMessages"
+            android:label="@string/title_activity_display_all_messages"
+            android:parentActivityName=".DisplayMessageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs6242.westga.edu.patrickdeanactivities.DisplayMessageActivity" />
+        </activity>
     </application>
 
 </manifest>
