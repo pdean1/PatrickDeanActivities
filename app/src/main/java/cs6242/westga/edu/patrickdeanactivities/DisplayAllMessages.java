@@ -7,7 +7,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class DisplayAllMessages extends AppCompatActivity {
@@ -33,12 +32,8 @@ public class DisplayAllMessages extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText(message);
         message = intent.getStringExtra(DisplayMessageActivity.EXTRA_MESSAGE2);
-        TextView textView2 = (TextView) findViewById(R.id.textView);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
         textView2.setText(message);
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.container);
-        rl.addView(textView);
-        rl.addView(textView2);
-
     }
 
 }

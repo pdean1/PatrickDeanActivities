@@ -29,8 +29,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.message2);
         String message = textView.getText().toString();
         intent.putExtra(MainActivity.EXTRA_MESSAGE, message);
-        message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE2, message);
+        String message2 = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE2, message2);
         startActivity(intent);
     }
 
