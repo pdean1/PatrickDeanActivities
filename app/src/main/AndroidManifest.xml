@@ -21,7 +21,6 @@
         <activity
             android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -30,7 +29,6 @@
         <activity
             android:name=".DisplayAllMessages"
             android:label="@string/title_activity_display_all_messages"
-            android:parentActivityName=".DisplayMessageActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

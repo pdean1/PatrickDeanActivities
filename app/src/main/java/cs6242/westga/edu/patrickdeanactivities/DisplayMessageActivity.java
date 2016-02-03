@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
@@ -22,13 +21,10 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.message1);
         textView.setTextSize(40);
         textView.setText(message);
-
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.holder);
-        layout.addView(textView);
     }
 
     public void showMessages(View v) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, DisplayAllMessages.class);
         TextView textView = (TextView) findViewById(R.id.message1);
         EditText editText = (EditText) findViewById(R.id.message2);
         String message = textView.getText().toString();
